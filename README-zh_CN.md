@@ -1,14 +1,14 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
+  
 <img width="160" src="https://gw.alipayobjects.com/mdn/rms_7d1485/afts/img/A*XDYxSJXBjjwAAAAAAAAAAAAAARQnAQ">
 
 <h1 align="center">Kitchen Theme</h1>
 
 Kitchen Theme for Stable Diffusion WebUI
 
-English · [简体中文](./README-zh_CN.md) · [Changelog](./CHANGELOG.md) · [Report Bug][issues-url] · [Request Feature][issues-url]
+[English](./README.md) · 简体中文 · [Changelog](./CHANGELOG.md) · [Report Bug][issues-url] · [Request Feature][issues-url]
 
 <!-- SHIELD GROUP -->
 
@@ -26,16 +26,16 @@ English · [简体中文](./README-zh_CN.md) · [Changelog](./CHANGELOG.md) · [
 
 ![](https://github.com/canisminor1990/sd-web-ui-kitchen-theme/blob/main/assets/screenshot.webp?raw=true)
 
-> ⚠️⚠️⚠️ Warning: minimum requirements gradio-3.23.0 & sd-webui [4c1ad74](https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/4c1ad743e3baf1246db0711aa0107debf036a12b)
+> ⚠️⚠️⚠️ 警告：最低要求 gradio-3.23.0 & sd-webui [4c1ad74](https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/4c1ad743e3baf1246db0711aa0107debf036a12b)
 
 <br/>
 
-## ✨ Features
+## ✨ 特性
 
-- 🌈 Supports light and dark themes with switch button.
-- 🪄 Supports Prompt formatting.
-- 🎛️ Quick Setting in draggable sidebar.
-- 🎨 Based on Antd CSS Token.
+- 🌈 支持亮暗色主题，并一键切换。
+- 🪄 支持 Prompt 格式化。
+- 🎛️ 快捷设置伸缩侧边栏.
+- 🎨 基于 Antd CSS Token。
 
 <div align="right">
 
@@ -43,13 +43,13 @@ English · [简体中文](./README-zh_CN.md) · [Changelog](./CHANGELOG.md) · [
 
 </div>
 
-## 🖥 Environment Support
+## 🖥 兼容环境
 
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | last 2 versions                                                                                                                                                                                              | last 2 versions                                                                                                                                                                                      | last 2 versions                                                                                                                                                                                              |
 
-> ⚠️ There is currently a known compatibility issue with styles on Firefox browser.
+> ⚠️ 目前已知道在 Firefox 火狐浏览器上存在样式兼容问题
 
 <div align="right">
 
@@ -57,22 +57,21 @@ English · [简体中文](./README-zh_CN.md) · [Changelog](./CHANGELOG.md) · [
 
 </div>
 
-## 📦 Installation
+## 📦 安装
 
-As an extension (recommended)
-Either clone the repo into your extensions folder:
+作为扩展（推荐） 将存储库克隆到您的扩展文件夹中：
 
 ```shell
 git clone "https://github.com/canisminor1990/sd-web-ui-kitchen-theme" extensions/kitchen-theme
 ```
 
-The current theme supports both light and dark themes. If you want to force dark mode, use the `--theme=dark` argument to launch your WebUI. For example, on Windows, your `webui-user.bat` should include:
+当前主题支持亮暗色双主题，如果你想强制使用暗色模式，使用参数 `--theme=dark` 启动您的 WebUI。例如，在 Windows 上，您的 `webui-user.bat` 应包括：
 
 ```shell
 set COMMANDLINE_ARGS= --theme=dark
 ```
 
-Alternatively, you can switch directly through URL Props:
+或通过 URL Props 直接切换
 
 ```shell
 http://localhost:7860/?__theme=light
@@ -85,38 +84,38 @@ http://localhost:7860/?__theme=dark
 
 </div>
 
-## ⚒️ Recommended Settings
+## ⚒️ 推荐设置
 
-#### Kitchen WebUI Setting
+#### Kitchen WebUI Setting 主题设置
 
-> 👉 Tip: top right `⚙` icon in header
+> 👉 Tip: 右上角 `⚙` 图标打开设置面板，当前可用设置如下
 
 - **Prompt Textarea**
-  - Display mode: `scroll` | `resizable`
+  - Display mode: `scroll 固定高度滚动` | `resizable 按文本行数缩放`
 - **Sidebar**
-  - Default expand: `true`
-  - Display mode: `fixed` | `float`
-  - Default width: `280`
+  - Default expand 默认展开: `true`
+  - Display mode: `fixed 固定` | `float 悬浮`
+  - Default width 默认宽度: `280`
 - **ExtraNetwork Sidebar**
-  - Enable: `true`
-  - Default expand: `true`
-  - Display mode: `fixed` | `float`
-  - Default Width: `340`
-  - Default card size: `86`
+  - Enable 启用: `true`
+  - Default expand 默认展开: `true`
+  - Display mode: `fixed 固定` | `float 悬浮`
+  - Default Width 默认宽度: `340`
+  - Default card size 模型卡片默认尺寸: `86`
 
 <br/>
 
-#### Extra-Networks
+#### Extra-Networks 扩展模型视窗
 
-- thumbs
-- width: 86
-- height: 128
+- 拇指视图
+- 卡牌宽度: 86
+- 卡牌高度: 128
 
 ![](https://github.com/canisminor1990/sd-web-ui-kitchen-theme/blob/main/assets/extra-networks.webp?raw=true)
 
 <br/>
 
-#### Quick-Setting
+#### Quick-Setting 快捷设置
 
 ```txt
 sd_model_checkpoint, sd_vae, CLIP_stop_at_last_layers, img2img_background_color, img2img_color_correction, samples_save, samples_format, grid_save, return_grid,  n_rows, live_previews_enable, show_progress_every_n_steps, live_preview_refresh_period
@@ -128,19 +127,19 @@ sd_model_checkpoint, sd_vae, CLIP_stop_at_last_layers, img2img_background_color,
 
 </div>
 
-## 🪄 Prompt formatting
+## 🪄 提示词格式化
 
 ![](https://github.com/canisminor1990/sd-web-ui-kitchen-theme/blob/main/assets/prompt-formatting.webp?raw=true)
 
-> 👉 Tip: Convert full-width punctuation to half-width, remove extra spaces, add missing commas, and move the Extra-Networks model to the end.
+> 👉 Tip: 全角标点转半角，去除多余空格，补充缺失逗号，把 Extra-Networks 模型移动到末尾
 
-Before
+格式化前
 
 ```text
 photorealistic   photo of a handsome male (wizard  :1.2）， <lora:LuisapHotlineStyle:0.5> <lora:ElegantHanfuRuqunStyle:0.2>    short beard, white wizard  shirt, (with golden    trim:0.8),
 ```
 
-After
+格式化后
 
 ```text
 photorealistic photo of a handsome male, (wizard:1.2), short beard, white wizard shirt, (with golden trim:0.8), <lora:LuisapHotlineStyle:0.5>, <lora:ElegantHanfuRuqunStyle:0.2>
@@ -152,13 +151,13 @@ photorealistic photo of a handsome male, (wizard:1.2), short beard, white wizard
 
 </div>
 
-## ⌨️ Local Development
+## ⌨️ 本地开发
 
-You can use Gitpod for online development:
+你可以使用 Gitpod 进行在线开发：
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)][gitpod-url]
 
-Or clone it for local development:
+或者克隆到本地开发:
 
 ```bash
 $ git clone https://github.com/canisminor1990/sd-web-ui-kitchen-theme.git
@@ -173,7 +172,7 @@ $ npm start
 
 </div>
 
-## 🤝 Contributing
+## 🤝 参与贡献
 
 <!-- CONTRIBUTION GROUP -->
 
@@ -203,7 +202,7 @@ $ npm start
 
 </div>
 
-## 🔗 Credits
+## 🔗 链接
 
 - stable-diffusion-webui：https://github.com/AUTOMATIC1111/stable-diffusion-webui
 - gradio-theme-gallery: https://huggingface.co/spaces/gradio/theme-gallery
